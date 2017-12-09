@@ -10,7 +10,7 @@ import twitter4j.TwitterException;
 
 @Slf4j
 public class Main {
-    private static TwitterApi twitterApi = new TwitterApi(TwitterConfigurations.getKinaiTwitterConfiguration());
+    private static TwitterApi twitterApi = new TwitterApi(TwitterConfig.getKinaiTwitterConfiguration());
     private static String HAPPY_BIRTHDAY_TEXT = "SDC Putten feliciteert selectie speler %s met zijn verjaardag.";
 
     public static void main(String[] args) throws IOException, TwitterException {

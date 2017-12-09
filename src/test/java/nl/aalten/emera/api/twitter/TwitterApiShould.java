@@ -7,7 +7,7 @@ public class TwitterApiShould {
 
     @Test
     public void sendTweetWithCorrectDetails() {
-        TwitterApi twitterApi = new TwitterApi(TwitterConfigurations.getKinaiTwitterConfiguration());
+        TwitterApi twitterApi = new TwitterApi(TwitterConfig.getKinaiTwitterConfiguration());
         twitterApi.sendTweet(new Tweet("Gefeliciteerd met je verjaardag!"));
     }
 }
